@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUAPA Shop</title>
+  <style>
+    :root {
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+      --figcaption: darkblue;
+      --figure-bg: lightgrey;
+      --h1: black;
+      font-family: sans-serif;
+      --h1-bg-color: rgba(167, 167, 167, 0.7);
+      --h2: olive;
+      --main-bg-color: whitesmoke;
+      --menu-bg-color: darkgray;
+      --p: lightblue;
+      --span: darkblue;
+      --section-bg-color: lightgray;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin-top: 10vh;
+      background-color: var(--main-bg-color);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--h1);
+      vertical-align: middle;
+    }
+
+    footer a {
+      font-size: 120%;
+      font-weight: bold;
+    }
+
+    a img {
+      width: 30px;
+    }
+
+    .carrousel {
+      width: 90%;
+      min-height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: var(--section-bg-color);
+    }
+
+    .contact {
+      display: block;
+    }
+
+    figure {
+      width: 25%;
+      min-width: 200px;
+      height: auto;
+      background-color: var(--figure-bg);
+      border-radius: 10px;
+      border: thin solid olive
+    }
+
+    figure * {
+      cursor: pointer;
+    }
+
+    figure img {
+      display: block;
+      margin: auto;
+      padding: 10%;
+      width: 80%;
+      height: auto;
+    }
+
+    figcaption {
+      color: var(--figcaption);
+      text-align: center;
+      padding-bottom: 10px;
+
+    }
+
+    h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      position: sticky;
+      top: 0;
+      left: 60%;
+      font-size: 250%;
+      height: 18vh;
+      width: 40%;
+      text-align: center;
+      color: var(--h1);
+      background-color: var(--h1-bg-color);
+      border-radius: 50%;
+    }
+
+    h2 {
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+      color: var(--h2);
+      text-align: center;
+      font-size: 180%;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 10vh;
+      width: 50%;
+      height: auto;
+      left: 20%;
+      background-color: var(--main-bg-color);
+      color: var(--h2);
+    }
+
+    .fixed * {
+      color: var(--h2);
+    }
+
+    .form {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+
+    .form * {
+      width: 60%;
+    }
+
+    iframe {
+      display: block;
+      margin: auto;
+    }
+
+    .menu {
+      padding: 5px;
+      border-radius: 4px;
+      position: sticky;
+      top: 0vh;
+      font-size: 150%;
+      display: inline;
+      text-align: right;
+      color: var(--span);
+      cursor: pointer;
+      background-color: var(--menu-bg-color);
+    }
+
+    .menu *:hover {
+      width: 110%;
+      font-weight: bold;
+    }
+
+    .section {
+      width: 90%;
+      min-height: 100vh;
+      margin: 0 auto;
+      background-color: var(--section-bg-color);
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .us {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      font-size: 150%;
+    }
+
+    .us img {
+      width: 50%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>GUAPA <br>Shop</h1>
+  <aside class="menu">
+    <span><a href="#prod">Nosotros</a></span>-
+    <span><a href="#us">Productos</a></span>-
+    <span><a href="#contact">Contacto</a></span>-
+    <span><a href="#find">Visitanos</a></span>
+  </aside>
+  <h2 id="prod">Nosotros</h2>
+  <div class="section us">
+    <span style="padding:5px"><br>
+      <h3>GUAPA</h3>
+      <P>Shop</P><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est rerum id natus maiores enim
+      blanditiis!
+      Laudantium numquam illo quos totam minus enim voluptatem minima, doloribus aliquid nulla omnis maiores
+      sequi?
+    </span>
+    <img src="https://placeimg.com/640/480/people" alt="people">
+  </div>
+  <h2 id="us">Productos</h2>
+  <div class="carrousel">
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/animals" alt="animals">
+      <figcaption>Animals</figcaption>
+    </figure>
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/arch" alt="Arch">
+      <figcaption>Arch</figcaption>
+    </figure>
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/any" alt="any">
+      <figcaption>Any</figcaption>
+    </figure>
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/animals" alt="animals">
+      <figcaption>Animals</figcaption>
+    </figure>
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/arch" alt="Arch">
+      <figcaption>Arch</figcaption>
+    </figure>
+    <figure class="product">
+      <img src="https://placeimg.com/640/480/any" alt="any">
+      <figcaption>Any</figcaption>
+    </figure>
+  </div>
+  <h2 id="contact">Contactanos</h2>
+  <div class="section form">
+    <form name="contact-form" class="contact-form">
+      <br><br><br><br>
+      <input type="text" name="name" required placeholder="Ingresa tu nombre"><br><br>
+      <input type="text" name="mail" required placeholder="Ingresa tu mail"><br><br>
+      <textarea name="comments" id="coments" placeholder="Dejanos tu comentario" cols="30" rows="10"></textarea><br><br>
+      <input type="submit">
+    </form>
+  </div>
+  <h2 id="find">Visitanos</h2>
+  <div class="contact">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.818959885874!2d-58.37597488540376!3d-34.60873918045816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad313b06289%3A0x8a0b9d45a2dea96f!2sMuseo%20Hist%C3%B3rico%20Nacional%20del%20Cabildo%20y%20la%20Revoluci%C3%B3n%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1638682703305!5m2!1ses-419!2sar"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <footer
+    style="width:100%;display: flex; justify-content:space-evenly;align-items: center; position: fixed; bottom:0; background-color:var(--h1-bg-color)">
+    <a href="https://api.whatsapp.com/send?phone=+5491112341234&text=Somos%20GUAPA%20Shop,%20Bienvenida"
+      target="_blank">Escribinos&nbsp;<img src="./what.png" alt="Whatsapp">
+    </a>
+    <a href="https://www.instagram.com/shopguapa_/" target="_blank"><img src="./instagram.png"
+        alt="Instagram">&nbsp;Seguinos</a>
+  </footer>
+
+  <script>
+    const d = document,
+      $products = d.querySelectorAll(".product")
+
+    d.addEventListener("click", e => {
+      if (e.target.matches(".product *")) {
+        console.log(e.target);
+        $products.forEach(el => el.classList.remove("fixed"));
+        e.target.parentElement.classList.add("fixed")
+      }
+      if (!e.target.matches(".product *")) {
+        $products.forEach(el => el.classList.remove("fixed"))
+      }
+    })
+  </script>
+</body>
+
+</html>
